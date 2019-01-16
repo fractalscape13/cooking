@@ -9,51 +9,20 @@
     <title>Cooking</title>
   </head>
   <body>
-    <div class="container">
+    <form id="print">
+      <select class="form-control" id="beverage">
+        <option value="Coffee">Coffee</option>
+        <option value="Tea">Tea</option>
+        <option value="Kombucha">Kombucha</option>
+        <option value="Water">Water</option>
+      </select>
+      <button type="submit" name="button">Print!</button>
+    </form>
 
-      <div id="receipt">
-        <select class="form-control" id="beverage">
-          <option value="1">Coffee</option>
-          <option value="2">Tea</option>
-          <option value="3">Kombucha</option>
-          <option value="4">Water</option>
-        </select>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="chocolate" checked>
-            Chocolate
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
-
-        <div class="form-group">
-          <label for="born">Date of birth:</label>
-          <input id="born" class="form-control" type="date">
-        </div>
-
-        <div class="form-group">
-          <label for="color">What is your favorite color?</label>
-          <input id="color" class="form-control" type="color">
-        </div>
-        <button type="submit" class="btn">Receipt</button>
-
-      </div>
-      <div id="output">
-
-      </div>
+    <div id="output">
 
     </div>
+
+
   </body>
 </html>
